@@ -25,6 +25,9 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
+import Login from './Login';
+
+
 type SectionProps = PropsWithChildren<{
   title: string;
 }>;
@@ -76,8 +79,8 @@ function App(): JSX.Element {
           style={{
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
           }}>
-          <Section title="Step One">
-            Edit <Text style={styles.highlight}>App.tsx</Text> Hey man
+          <Section title="Log In">
+            <Login />
           </Section>
           <Section title="See Your Changes">
             <ReloadInstructions />
